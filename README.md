@@ -161,7 +161,7 @@ EOF
 
 `$ kubectl apply -f gitlab-runner-sa-cluster-role.yaml`
 
-Create a configamp for gitlab-runner. Change the registration-token and service-account name with your. (Remeber the tag name {--tag-list k8s} it will be use in gitlab-ci.
+Create a configamp for gitlab-runner. Change the registration-token and service-account name with your. (Remeber the tag name {--tag-list k8s}, it will use in gitlab-ci.
 
 ```
 cat <<EOF |tee gitlab-configmap.yaml
