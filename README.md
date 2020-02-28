@@ -12,7 +12,7 @@ Creating PV and PVC for storing `GitLab` data and configuration.
 Creating `gitlab-pv`. Replace nfs-server and export path.
 
 ```
-cat <<EOF | tee gitlab-pv
+cat <<EOF | tee gitlab-pv.yaml
 apiVersion: v1
 kind: PersistentVolume
 metadata:
@@ -32,12 +32,12 @@ spec:
 EOF
 ```
 
-`$ kubectl apply -f gitlab-pv`
+`$ kubectl apply -f gitlab-pv.yaml`
 
 Creating `gitlab-pvc`.
 
 ```
-cat <<EOF | tee gitlab-pvc
+cat <<EOF | tee gitlab-pvc.yaml
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
@@ -53,7 +53,7 @@ spec:
 EOF
 ```
 
-`$ kubectl apply -f gitlab-pvc`
+`$ kubectl apply -f gitlab-pvc.yaml`
 
 
 Creating service with NodePort.
