@@ -134,7 +134,7 @@ EOF
 
 # 2. Deploying Gitlab-Runner on the Kubernetes cluster.
 
-We need a service account and cluster-admin label rolebing to access all the resources for gitlab-runner.
+We need a service account and cluster-admin label role to access all the resources for gitlab-runner.
 
 ```
 cat <<EOF | gitlab-runner-sa-cluster-role.yaml
