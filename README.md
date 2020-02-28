@@ -1,7 +1,7 @@
 # Kubernetes-Gitlab-Installation
 Deploying Gitlab on the Kubernetes cluster.
 
-# Deploying Gitlab-CE on the Kubernetes cluster.
+# 1. Deploying Gitlab-CE on the Kubernetes cluster.
 
 First, we need to create a `GitLab` namespace.
 
@@ -132,7 +132,7 @@ EOF
 
 
 
-# Deploying Gitlab-Runner on the Kubernetes cluster.
+# 2. Deploying Gitlab-Runner on the Kubernetes cluster.
 
 We need a service account and cluster-admin label rolebing to access all the resources for gitlab-runner.
 
