@@ -243,3 +243,12 @@ EOF
 `$ kubectl apply -f gitlab-runner.yaml`
 
 
+Get the pod status by `kubectl get po -n gitlab`
+
+```
+kubectl get po -n gitlab
+
+NAME                             READY   STATUS    RESTARTS   AGE
+gitlab-7c6fdbcc97-d8rfj          1/1     Running   0          5m
+gitlab-runner-865d779469-gbxkt   1/1     Running   0          120s
+```
